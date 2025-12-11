@@ -1,2 +1,3 @@
 # Small-chops-oder-site
+**NOTE I ALREADY STATED WORKING ON THE PROJECT LOCALLY ON MY COMPUTER BEFORE UPLODING TO CONTINUE**
 designing an online small chops page
