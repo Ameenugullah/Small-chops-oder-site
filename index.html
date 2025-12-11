@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YAQEEN — Shawarma & Grills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <button id="menuToggle" class="burger" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">
+        <span class="burger-box"><span class="burger-bar"></span></span>
+      </button>
+      <div class="brand">YAQEEN</div>
+      <nav id="mainNav" class="nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#cart">Cart</a></li>
+          <li><a href="#pickup">Pickup</a></li>
+        </ul>
+      </nav>
+      <div class="meta">Pickup • Quick Order</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-empty" aria-hidden="true"></section>
+    <section class="wrap main-area">
+      <div class="content">
+        <div class="menu-controls">
+          <div class="filters" aria-hidden="false">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="shawarma">Shawarma</button>
+            <button class="filter-btn" data-filter="burger">Burgers</button>
+            <button class="filter-btn" data-filter="fries">Fries</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+          </div>
+          <div class="search">
+            <input id="searchInput" placeholder="Search menu (eg. chicken, cheese)" />
+          </div>
+        </div>
+
+        <div id="menu" class="menu" aria-live="polite">
+          <!-- Menu cards injected by `script.js` -->
+        </div>
+      </div>
+
+      <aside id="cart" class="cart">
+        <h2>Cart</h2>
+        <div id="cartList" class="cart-list">
+          <div class="small">No items yet</div>
+        </div>
+        <div id="totalLabel" class="total">Total: ₦0</div>
+
+        <div class="pickup" id="pickup">
+          <h3>Pickup</h3>
+          <div id="coords" class="coords small">No pickup location set</div>
+          <div class="pickup-actions">
+            <button id="locBtn" class="btn small">Use My Location</button>
+            <button id="manualBtn" class="btn ghost small">Enter Coordinates</button>
+          </div>
+        </div>
+
+        <button id="placeOrder" class="btn primary place">Place Order</button>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-row">
+        <div>© YAQEEN • Open daily</div>
+        <div>Order • Pickup • Enjoy</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
