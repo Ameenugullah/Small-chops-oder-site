@@ -24,8 +24,22 @@
     </div>
   </header>
 
+  <!-- Menu intro popup (click to continue) -->
+  <div id="menuPopup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-hidden="true">
+    <div class="popup" role="document">
+      <div class="popup-hero" aria-hidden="true"></div>
+      <div class="popup-body">
+        <h3 id="popupTitle">Welcome to YAQEEN</h3>
+        <p>Click below to view our menu and start an order. You can close this anytime — we'll remember your choice for this device.</p>
+        <div class="popup-actions">
+          <button id="popupView" class="btn primary">View Menu</button>
+          <button id="popupClose" class="btn primary">Maybe later</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main>
-    <section id="hero" class="hero-empty" aria-hidden="true"></section>
     <section class="wrap main-area">
       <div class="content">
         <div class="menu-controls">
@@ -75,7 +89,6 @@
       </div>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
